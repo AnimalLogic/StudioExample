@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+find_package(ALUsdMaya REQUIRED)
+find_package(Maya REQUIRED)
+set(PXR_PACKAGE_STUDIO_TRANSLATORS "StudioTranslators")
+add_subdirectory(translators)

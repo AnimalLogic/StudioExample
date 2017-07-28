@@ -1,0 +1,25 @@
+#usda 1.0
+(
+  defaultPrim = "Root"
+  endTimeCode = 10
+  startTimeCode = 1
+)
+
+def "Root"()
+{
+	def UsdAnimatedPlane "AnimatedPlane"()
+	{
+	    float size.timeSamples = {
+	        1: 1,
+	        2: 2,
+	        3: 3,
+	        4: 4,
+	        5: 5,
+	        6: 6,
+	        7: 7,
+	        8: 8,
+	        9: 9,
+	        10: 10
+	    }
+	}
+}

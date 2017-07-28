@@ -1,0 +1,18 @@
+# - Config file for the Studio_USDCommonSchemas package
+# It defines the following variables
+
+#  STUDIOUSDSCHEMAS_ROOT - top directory of the package
+#  STUDIOUSDSCHEMAS_INCLUDE_DIRS - include directories
+#  STUDIOUSDSCHEMAS_LIBRARY    - libraries to link against
+#  STUDIOUSDSCHEMAS_PYTHON_LIBRARY    - python libraries to link against
+#  STUDIOUSDSCHEMAS_LIBRARIES - all of the libraries created.
+
+# Compute paths
+set(STUDIOUSDSCHEMAS_ROOT "@CMAKE_INSTSTUDIOL_PREFIX@")
+set(STUDIOUSDSCHEMAS_INCLUDE_DIRS "@CMAKE_INSTALL_PREFIX@/include")
+
+set(STUDIOUSDSCHEMAS_LIBRARY "@PXR_LIBRARY_LOCATION@")
+set(STUDIOUSDSCHEMAS_PYTHON_LIBRARY "@PXR_PYTHON_LIBRARY_LOCATION@")
+list(APPEND STUDIOUSDSCHEMAS_LIBRARIES 
+            ${STUDIOUSDSCHEMAS_LIBRARY} 
+            ${STUDIOUSDSCHEMAS_PYTHON_LIBRARY})

@@ -1,0 +1,18 @@
+{
+    "Plugins": [
+        {
+            "Info": {
+                "Types": {
+                    "Studio::UsdAnimatedPlane": {
+                        "bases": ["AL::usdmaya::fileio::translators::TranslatorBase"]
+                    }
+        }
+            },
+            "LibraryPath": "@PLUG_INFO_LIBRARY_PATH@",
+            "Name": "StudioTranslators",
+            "ResourcePath": "@PLUG_INFO_RESOURCE_PATH@",
+            "Root": "..",
+            "Type": "library"
+        }
+    ]
+}

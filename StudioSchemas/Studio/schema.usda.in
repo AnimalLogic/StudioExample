@@ -1,0 +1,32 @@
+#usda 1.0
+(
+    """ This file contains an example schemata for code generation using
+        usdGenSchema.
+    """
+    subLayers = [
+        @@USD_SCHEMA_PATH@@
+    ]
+) 
+
+over "GLOBAL" (
+    customData = {
+        string libraryName        = "@PXR_PACKAGE_STUDIO_SCHEMAS@"
+        string libraryPath        = "."
+        string libraryPrefix      = "Studio_"
+        string tokensPrefix       = "Studio_Schemas"
+    }
+) {
+}
+###################################################################################################
+
+class UsdAnimatedPlane "UsdAnimatedPlane"(
+  doc = "Example schema. Creates a UsdAnimatedPlane in maya and controls it's maya values from USD"
+  inherits = </Typed>
+  customData = {
+        string className = "UsdAnimatedPlane"
+        string fileName = "UsdAnimatedPlane"
+      }
+)
+{
+  float size=1;
+}
