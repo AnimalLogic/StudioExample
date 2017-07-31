@@ -27,7 +27,6 @@ add_library(${STUDIO_MAYA_NODES_LIBRARY_NAME}
 target_include_directories(
     ${STUDIO_MAYA_NODES_LIBRARY_NAME}
     PUBLIC
-    ${studio_plugin_public_headers}
     ${STUDIOSCHEMAS_INCLUDE_DIRS}
     ${MAYA_INCLUDE_DIRS}
 )

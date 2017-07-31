@@ -10,6 +10,11 @@ add_library( ${STUDIO_MAYA_NODES_PLUGIN_NAME}
   ${studio_plugin_source}
 )
 
+target_include_directories(${STUDIO_MAYA_NODES_PLUGIN_NAME}
+    PUBLIC
+    ../
+)
+
 target_link_libraries(${STUDIO_MAYA_NODES_PLUGIN_NAME}
     ${STUDIO_MAYA_NODES_LIBRARY_NAME}
     ${MAYA_Foundation_LIBRARY}

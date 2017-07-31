@@ -17,7 +17,7 @@
 #include <maya/MGlobal.h>
 #include <maya/MStatus.h>
 
-#include "../nodes/PluginRegister.h" //TODO: Fix up relative path
+#include "nodes/PluginRegister.h"
 
 MStatus initializePlugin(MObject obj)
 {
