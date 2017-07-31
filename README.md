@@ -36,17 +36,12 @@ To re-write that example in another way:
 
 After you have a successful build, you'll need to make sure your runtime environment is setup with the following
 
-#### PYTHONPATH
-Set with all the paths to your installed python pxr plugins. 
-
-#### LD_LIBRARY_PATH
-Set with all the paths to your built libraries
-
-#### MAYA_PLUG_IN_PATH
-Paths to the libaries with your custom maya nodes.
-
-#### PXR_PLUGINPATH
-Paths to where yourt pxr plugins are installed e.g. <SOME_PATH>/share/usd/plugins
+| ENV Variable       | Description
+|-------------------|--------------------------------------------------------------------------------
+| PYTHONPATH        | Set with all the paths to your installed python pxr plugins 
+| LD_LIBRARY_PATH   | Set with all the paths to your built libraries
+| MAYA_PLUG_IN_PATH | Paths to the libaries with your custom maya nodes
+| PXR_PLUGINPATH    | Paths to where yourt pxr plugins are installed e.g. <SOME_PATH>/share/usd/plugins
 
 
 ## Schemas Package
@@ -181,7 +176,7 @@ If one of your USD plugins arn't available
 ```
 
 
-### Demo
+### Running the demo
 
 Congratulations! Getting this far can be quite the journey.
 
@@ -217,7 +212,7 @@ a.Set(1,5)
 Now scrub the animation slider to frame 5 and notice it shrinks down.
 
 
-### Plugin creation advice
+## Plugin creation advice
 There are certain steps which need to be met before Pixar's PluginRegistry is able to find and then consume your plugin.
 From our experience, the easiest way to start to create a Pixar plugin is by looking through the the cmake modules Pixar provide, particularly pxr_plugin this method will:
 1. Compile all the passed in source files
@@ -246,9 +241,9 @@ pxr_plugin(${PXR_PACKAGE}
 
 You might find that we don't often use this cmake module often. The reason for this is that we wanted to have more control of the build and installation process.
 
-### Further work
+## Further work
 1. We are looking to merging all our CMake configuration into a single repository to avoid copying it around to all the different packages
 
-### FAQ
+## FAQ
 Nothing yet, Please email us! usdmaya@al.com.au 
 
