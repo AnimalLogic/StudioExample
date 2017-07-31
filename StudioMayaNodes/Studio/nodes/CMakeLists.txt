@@ -1,5 +1,3 @@
-#add_definitions(${usdBase_DEFINITIONS}) need this for internal build
-
 list(APPEND studio_nodes_public_headers
   UsdDrivenMeshExample.h
 )
