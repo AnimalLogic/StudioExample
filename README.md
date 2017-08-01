@@ -58,7 +58,7 @@ class StudioSchema "StudioSchema"(
   float size=1;
 }
 ```
-When AL_USDMaya comes across prims with schemas, it will check if the found schema is of a derived type from Typed and if it is, AL_USDMaya will attempt to find the corresponding translator by asking each translator if it supports this derived schema type. If one is found, the search stops and the prim is translated by the found translator.
+When AL_USDMaya comes across a prim with a type, it will check if the found type is derived from Typed, if it is, AL_USDMaya will attempt to find the corresponding translator by asking each translator if it supports this derived schema type. If one is found, the search stops and the prim is translated by the found translator.
 
 ### Some tips and gotchas:
 To test the health of your schemas library I would recommend to test the following things:
@@ -242,7 +242,7 @@ pxr_plugin(${PXR_PACKAGE}
 You might find that we don't often use this cmake module often. The reason for this is that we wanted to have more control of the build and installation process.
 
 ## Further work
-1. We are looking to merging all our CMake configuration into a single repository to avoid copying it around to all the different packages
+1. We are looking to merging all our CMake configuration files into a single repository to avoid copying them around to all the different packages
 
 ## FAQ
 Nothing yet, Please email us! usdmaya@al.com.au 
